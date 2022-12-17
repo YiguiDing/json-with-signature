@@ -20,7 +20,7 @@ const publicKeyStr = key.exportKey('pkcs8-public') // 公钥
 
 **在消息发送端 - at message sender**
 ```js
-const RSA_JSON = require("json-with-signatur")
+const RSA_JSON = require("json-with-signature")
 
 var rsaJsonA = new RSA_JSON({
     privateKeyStr:
@@ -53,7 +53,7 @@ eyJtZXNzYWdlIjoiZXlKdGMyY2lPaUowYUdseklHbHpJR0VnYldWemMyRm5aU0lzSW5KaGJtUnZiVjl0
 
 **在消息接收端 - at message receiver**
 ```js
-const RSA_JSON = require("json-with-signatur")
+const RSA_JSON = require("json-with-signature")
 
 // at computer B
 var rsaJsonB = new RSA_JSON({
@@ -91,7 +91,7 @@ console.log(obj);
 
 ## 最简单用法 Simplest usage
 ```js
-const RSA_JSON = require("json-with-signatur")
+const RSA_JSON = require("json-with-signature")
 
 var rsaJSON = new RSA_JSON();
 
