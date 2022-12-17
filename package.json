@@ -1,7 +1,7 @@
 {
   "name": "json-with-signature",
   "description": "Like JSON.stringify, but signatured with RSA.",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "./src/JSON-with-Signature.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

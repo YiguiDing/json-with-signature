@@ -30,7 +30,7 @@ function base64Dncode(msgStr){
     return Buffer.from(msgStr, 'base64').toString()
 }
 function EncodeObj(dataObj,privateKey){//编码消息并签名
-    dataObj["random_msg"] = uuidv4(); // 保证签名的唯一性
+    dataObj["message_uuid"] = uuidv4(); // 保证签名的唯一性
     var dataStr = JSON.stringify(dataObj);
     var message = base64Encode(dataStr) // 消息用base64浅加密
     var signature = signRSA(message,privateKey) // 签名
