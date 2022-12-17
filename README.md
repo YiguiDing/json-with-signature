@@ -1,6 +1,8 @@
 # json-with-signature
-就像`JSON.stringify`，但用rsa签名过。
-Like `JSON.stringify`, but signatured with rsa.
+
+就像`JSON.stringify`，但用RSA签名过。
+
+Like `JSON.stringify`, but signatured with RSA.
 
 ## 用处 - useage
 当你想把一个javaScript的对象发送给另一台主机时，你可以直接使用`JSON.stringify()`来获取一个字符串，然后发送这个字符串，但是这不能防止信息在传递过程中被篡改，一种解决方法是，在发送时把要发送的消息通过RSA私钥签名，在接收端，通过公钥来验证收到的消息。
